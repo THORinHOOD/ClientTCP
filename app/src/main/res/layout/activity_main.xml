@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="catwithbowtie.slontcp.MainActivity">
+
+    <EditText
+            android:id="@+id/lgn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Login"
+            android:text="" android:layout_alignParentTop="true" android:layout_alignParentEnd="true">
+    </EditText>
+
+    <EditText
+            android:id="@+id/pswd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:text="" android:layout_below="@+id/name" android:layout_alignParentEnd="true">
+    </EditText>
+
+    <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:text="" android:layout_below="@+id/lgn" android:layout_alignParentStart="true">
+    </EditText>
+
+
+    <Button
+            android:id="@+id/btn_lgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="registration"
+            android:text="Registration" android:layout_below="@+id/pswd" android:layout_alignParentStart="true"/>
+
+    <EditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:text="" android:layout_below="@+id/btn_lgn" android:layout_alignParentStart="true">
+    </EditText>
+
+
+    <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="send_msg"
+            android:text="Send"
+            android:layout_alignParentStart="true" android:layout_below="@+id/msg"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Messages : "
+            android:id="@+id/textView"
+            android:layout_below="@+id/btn_send" android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
